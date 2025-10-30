@@ -17,8 +17,8 @@ const InstantDiscountCard = () => {
         <div className="bg-gradient-to-r from-blue-900 via-blue-700 to-transparent h-full p-10 text-white">
           <SectionHeader title="Get Instant Discounts" />
           <p className="text-sm pr-10 py-3">
-            Just sign into your wander list account and look for blue genuis
-            logo to save.
+            Just sign into your wander list account and look for blue genuis Sl
+            to save.
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-5 py-10">

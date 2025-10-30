@@ -10,9 +10,9 @@ import Parkingform from "@/components/bookHotel/parkingform";
 
 const page = () => {
   return (
-    <>
-      <Stepper/>
-    </>
+    <div className="max-w-[1200px] mx-auto">
+      <Stepper />
+    </div>
   );
 };
 

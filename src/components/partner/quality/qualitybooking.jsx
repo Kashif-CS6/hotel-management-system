@@ -1,7 +1,7 @@
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 const Qualitybooking = () => {
   return (
-    <div className="flex w-80 md:w-auto py-4 mt-5 mx-2 md:px-14 flex-wrap xl:flex-nowrap">
+    <div className="flex w-80 md:w-auto  py-4 mt-5 mx-2 md:px-14 flex-wrap xl:flex-nowrap">
       {/* left */}
       <div className="w-auto md:w-[40rem]">
         <h1 className="text-start text-2xl md:text-4xl md:text-start font-[800] ">

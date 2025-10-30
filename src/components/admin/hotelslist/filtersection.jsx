@@ -87,7 +87,7 @@ const Filtersection = () => {
   }, [searchTerm]);
 
   return (
-    <div className="w-auto md:w-9/12">
+    <div className="pl-10 w-auto md:w-9/12">
       {/* top */}
       <div className="my-2 flex flex-col items-center md:items-start text-center md:text-start">
         <h1 className="text-xl font-[700]">176 Stays in Melbourne</h1>

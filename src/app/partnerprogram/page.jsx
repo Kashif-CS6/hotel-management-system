@@ -9,19 +9,20 @@ import Feedback from "@/components/partner/feedback";
 import Question from "@/components/partner/question";
 const partner = () => {
   return (
-    <>
+    <div>
       <NavBar />
-
-      <Partnerhero />
-      <Partnerreach />
-      <Qualitybooking />
-      <Propertycontrol />
-      <Manageproperty />
-      <Feedback />
-      <Question />
+      <div className=" max-w-[1200px] mx-auto">
+        <Partnerhero />
+        <Partnerreach />
+        <Qualitybooking />
+        <Propertycontrol />
+        <Manageproperty />
+        <Feedback />
+        <Question />
+      </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

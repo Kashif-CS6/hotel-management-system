@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
 import { BsCalendar2Date } from "react-icons/bs";
 import Link from "next/link";
+import {useRouter} from "next/navigation";
 
 const Reservationsummary = () => {
+  const router = useRouter();
   return (
     <div className="md:w-96 mx-auto border rounded-lg py-3 my-2">
       <div className="px-2 py-2">
@@ -40,7 +43,9 @@ const Reservationsummary = () => {
             <p className="text-sm font-[600]">
               King bed stylish Apartment with Loft style family rom
             </p>
-            <Link  className="text-sm font-[600] text-blue-600" href="#">Change your selection</Link>
+            <Link className="text-sm font-[600] text-blue-600" href="#">
+              Change your selection
+            </Link>
           </div>
         </div>
 
@@ -65,7 +70,7 @@ const Reservationsummary = () => {
           </div>
 
           <div className="bg-blue-700 font-[600] text-white py-2 rounded-md flex justify-center my-2">
-            <button>Request to Book</button>
+            <button onClick={() => router.push("/")}>Request to Book</button>
           </div>
           <p className="text-xs text-[gray] text-center">
             we run on <span className="text-sm text-[gray]">TraWell Inc.</span>

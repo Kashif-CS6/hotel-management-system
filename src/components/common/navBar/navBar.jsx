@@ -4,15 +4,17 @@ import { IoClose } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import NavLinkList from "./navLinkList";
 import ButtonLight from "../buttonLight";
+import { useRouter } from "next/navigation";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const onClick = () => {
     setShowMenu(!showMenu);
   };
 
+  const router = useRouter();
   return (
     <div className="flex items-center justify-between px-5 md:px-10 lg:px-36 py-3">
-      <div>Logo</div>
+      <div className="font-semibold italic">SL(Groups)</div>
       {showMenu ? (
         <div className="absolute inset-0 z-50 h-screen w-screen bg-white flex items-center justify-center md:hidden">
           <div
@@ -33,7 +35,9 @@ const NavBar = () => {
 
       <div className="flex items-center gap-5">
         {/* <div className="border px-5 py-2 rounded text-orange-400 border-orange-400 hover:bg-orange-100 cursor-pointer"> */}
-        <ButtonLight>Contact Us</ButtonLight>
+        <ButtonLight onClick={() => router.push("/contact")}>
+          Contact Us
+        </ButtonLight>
         {/* </div> */}
         <div className="md:hidden cursor-pointer" onClick={onClick}>
           <FaBars />

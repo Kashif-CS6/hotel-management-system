@@ -8,9 +8,11 @@ import { FcGoogle } from "react-icons/fc";
 import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
 
 const page = () => {
   const [showpas, setShowpas] = useState(false);
+  const router = useRouter();
 
   // use form methods
   const {
@@ -25,7 +27,7 @@ const page = () => {
       <div className="flex gap-24 justify-center">
         {/* information wrapper */}
         <div className="flex flex-col justify-center">
-          <h1 className="text-3xl font-[700]">LOGO</h1>
+          <h1 className="text-3xl font-[700] italic">SL (Groups)</h1>
           <h1 className="text-md font-[600] pt-8">Create an account</h1>
           <p className="text-[13px]">
             Already have an account?{" "}
@@ -177,13 +179,19 @@ const page = () => {
 
           {/* other sign up options */}
           <div className="flex flex-col gap-2 py-1">
-            <button className="flex cursor-pointer items-center justify-center rounded gap-1 py-1 bg-blue-600">
+            <button
+              onClick={() => router.push("/")}
+              className="flex cursor-pointer items-center justify-center rounded gap-1 py-1 bg-blue-600"
+            >
               <GrFacebookOption color="white" />
               <span className="text-[13px] text-white font-[500]">
                 Continue with facebook
               </span>
             </button>
-            <button className="flex cursor-pointer items-center border rounded justify-center font-[500] gap-1 py-1">
+            <button
+              onClick={() => router.push("/")}
+              className="flex cursor-pointer items-center border rounded justify-center font-[500] gap-1 py-1"
+            >
               <FcGoogle />
               <span className="text-[13px]"> Continue with google</span>
             </button>

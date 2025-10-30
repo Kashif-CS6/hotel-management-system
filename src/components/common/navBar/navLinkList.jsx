@@ -3,7 +3,14 @@ import Link from "next/link";
 
 const navList = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
+  { name: "About", path: "/partnerprogram" },
+  { name: "Admin", path: "/admin/dashboard" },
+  { name: "User", path: "/user/dashboard" },
+  { name: "Booked", path: "/user/bookedhotel" },
+  { name: "Hotels", path: "/admin/hotels-list" },
+  { name: "Book Hotel", path: "/book-hotel/A1" },
+  { name: "Login", path: "/auth/login" },
+  { name: "Register", path: "/auth/signup" },
 ];
 
 const NavLinkList = () => {

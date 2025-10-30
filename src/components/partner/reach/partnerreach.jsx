@@ -1,6 +1,6 @@
 const Partnerreach = () => {
   return (
-    <div className=" xl:h-[60vh]">
+    <div className="mx-auto xl:h-[60vh]">
       <div className="mx-2 px-2 md:mx-0 md:px-[4rem] py-[4rem]">
         <h1 className="text-2xl md:text-3xl font-[800] py-3">
           Reach a unique global customer base

@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div>
       <NavBar />
-      <div className="flex gap-3 mx-3 flex-wrap justify-center xl:justify-normal">
+      <div className="flex gap-3 mx-3 flex-wrap justify-center  ">
         <div>
           <Charts />
           <Listing />
