@@ -5,7 +5,7 @@ const navList = [
   { name: "Home", path: "/" },
   { name: "About", path: "/partnerprogram" },
   { name: "Admin", path: "/admin/dashboard" },
-  { name: "User", path: "/user/dashboard" },
+  { name: "Search", path: "/searchresults/A1" },
   { name: "Booked", path: "/user/bookedhotel" },
   { name: "Hotels", path: "/admin/hotels-list" },
   { name: "Book Hotel", path: "/book-hotel/A1" },
