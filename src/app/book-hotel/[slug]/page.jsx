@@ -1,10 +1,9 @@
 "use client";
-import Stepper from "@/components/bookHotel/Stepper.jsx";
-
+import Step from "@/components/bookHotel/step";
 const page = () => {
   return (
     <div className="max-w-[1200px] mx-auto">
-      <Stepper />
+      <Step />
     </div>
   );
 };

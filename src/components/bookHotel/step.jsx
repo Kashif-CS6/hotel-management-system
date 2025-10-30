@@ -7,7 +7,7 @@ import Confirmation from "./confirmation";
 import Reservationsummary from "./reservationsummary";
 import { useForm, Controller } from "react-hook-form";
 
-const Stepper = () => {
+const Step = () => {
   const currentDate = new Date().toISOString().split("T")[0];
   const [userfirstname, setuserfirstname] = useState("");
   const [userlastname, setuserlastname] = useState("");
@@ -172,4 +172,4 @@ const Stepper = () => {
   );
 };
 
-export default Stepper;
+export default Step;
