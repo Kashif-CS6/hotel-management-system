@@ -1,5 +1,5 @@
 "use client";
-import Stepper from "@/components/bookHotel/Stepper";
+import Stepper from "@/components/bookHotel/Stepper.jsx";
 
 const page = () => {
   return (
